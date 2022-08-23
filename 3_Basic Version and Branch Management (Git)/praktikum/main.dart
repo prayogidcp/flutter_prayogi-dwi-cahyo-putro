@@ -5,4 +5,6 @@ main() {
   print('Informatika');
   print('branch development');
   print('stash 1');
+  print('konflik a');
+  print('konflik b');
 }
