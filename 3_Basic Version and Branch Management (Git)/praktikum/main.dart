@@ -5,6 +5,6 @@ main() {
   print('Informatika');
   print('branch development');
   print('stash 1');
-  print('featureA');
   print('test');
+  print('featureB');
 }
