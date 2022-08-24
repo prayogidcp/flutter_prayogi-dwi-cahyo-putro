@@ -1,9 +1,10 @@
-## Data diri
+# Section 3_Basic Version and Branch Management (Git)
+## **Data diri**
 ### NO. URUT    : 1_017FLC_30 
 ### NAMA        : PRAYOGI DWI CAHYO PUTRO
 #
-
-# **Summary Section 3_Basic Version and Branch Management (Git)**
+## **Summary**
+#
 
 ## Penggunaan GIT
 
@@ -28,3 +29,4 @@ digunakan dalam repository pribadi yang memiliki akses push.
 - Hindari direct edit ke branch development.
 - Merge branch feature hanya ke branch development.
 - Merge branch development ke branch master jika development selesai. 
+#
