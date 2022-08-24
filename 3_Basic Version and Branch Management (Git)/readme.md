@@ -1,3 +1,8 @@
+## Data diri
+### NO. URUT    : 1_017FLC_30 
+### NAMA        : PRAYOGI DWI CAHYO PUTRO
+#
+
 # **Summary Section 3_Basic Version and Branch Management (Git)**
 
 ## Penggunaan GIT
