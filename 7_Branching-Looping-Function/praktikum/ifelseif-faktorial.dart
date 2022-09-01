@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void task1(int nilai) {
+task1(int nilai) {
   if (nilai > 70) {
     print("Return A");
   } else if (nilai > 40) {
