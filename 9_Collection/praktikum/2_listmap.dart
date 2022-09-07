@@ -13,6 +13,6 @@ void main(List<String> args) {
       list_map[list[0][j]] = list[1][j];
     }
   }
-  print('Data Diri :');
+  print('Data Diri:');
   print(list_map);
 }
