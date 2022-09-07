@@ -1,15 +1,35 @@
 //BELUM SELESAI
 
 class Hewan {
-  double berat = 0;
+  double berat = 10;
 }
 
-class mobil {
-  double kapasitas = 105;
-  void tambahMuatan() {}
+class Mobil {
+  double kapasitas = 50;
+
+  List muatan = [];
+
+  void tambahMuatan() {
+    if (muatan.isEmpty) {
+      muatan.add(Hewan().berat);
+    }
+    print(muatan);
+    // if (muatan.last > kapasitas) {
+    //   muatan.add(Hewan().berat);
+    // }
+    // print(muatan);
+    // int jumlah = 0;
+    // for (int i in muatan) {
+    //   jumlah += i;
+    //   print(jumlah);
+    // }
+  }
 }
 
 void main() {
   var h1 = Hewan();
-  print("Berat = ${h1.berat}");
+  var h2 = Mobil();
+  // print(h2.muatan.length);
+  // print("Berat = ${h1.berat}");
+  h2.tambahMuatan();
 }

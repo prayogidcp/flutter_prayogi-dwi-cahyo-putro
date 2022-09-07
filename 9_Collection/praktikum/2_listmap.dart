@@ -18,7 +18,7 @@
 void main(List<String> args) {
   List<List> list = [
     ['Nama', 'NoID', 'Kelas'],
-    ['Maulana Aryo', '1_016FLB_36', 'B']
+    ['PRAYOGI DCP', '1_017FLC_30', 'c']
   ];
 
   Map<String, String> list_map = {};
