@@ -1,20 +1,3 @@
-// createList() async {
-//   final List<Map<String, dynamic>> listData = [
-//     {
-//       "Nama": "Prayogi",
-//       "Umur": 21,
-//       "Warna": ["Hitam", "Merah"]
-//     },
-//   ];
-
-//   var mapList = listData.map((e) => "Nama = ${e["Nama"]} Umur = ${e["Umur"]} Warna favorit = ${e["Warna"]}");
-//   print(mapList);
-// }
-
-// void main(List<String> args) {
-//   createList();
-// }
-
 void main(List<String> args) {
   List<List> list = [
     ['Nama', 'NoID', 'Kelas'],
@@ -30,6 +13,6 @@ void main(List<String> args) {
       list_map[list[0][j]] = list[1][j];
     }
   }
-  print('DATA DIRI :');
+  print('Data Diri :');
   print(list_map);
 }
