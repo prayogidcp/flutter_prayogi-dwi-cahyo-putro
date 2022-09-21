@@ -26,12 +26,6 @@ class MyApp extends StatelessWidget {
                 child: GridList(),
               );
             },
-
-            // crossAxisCount: 4,
-            // crossAxisSpacing: 10,
-            // mainAxisSpacing: 10,
-            // children: listBorder,
-            // padding: const EdgeInsets.all(10),
           )),
     );
   }
