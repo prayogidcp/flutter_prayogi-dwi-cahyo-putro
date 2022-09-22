@@ -2,10 +2,43 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+
+  final List<IconData> iconData = <IconData>[
+    Icons.pets,
+    Icons.pregnant_woman,
+    Icons.spatial_audio_off,
+    Icons.rounded_corner,
+    Icons.rowing,
+    Icons.timeline,
+    Icons.update,
+    Icons.access_time_filled,
+    Icons.back_hand,
+    Icons.euro,
+    Icons.g_translate,
+    Icons.remove_shopping_cart,
+    Icons.restore_page,
+    Icons.speaker_notes_off,
+    Icons.delete_forever,
+    Icons.accessibility,
+    Icons.check_circle_outline,
+    Icons.delete_outline,
+    Icons.done_outline,
+    Icons.maximize,
+    Icons.minimize,
+    Icons.offline_bolt_rounded,
+    Icons.swap_horizontal_circle,
+    Icons.accessible_forward,
+  ];
+  final Random r = Random();
+  Icon randomIcon() => Icon(IconData(r.nextInt(iconData.length)));
+  Icon randomIcon2() => Icon(
+        iconData[r.nextInt(iconData.length)],
+        size: 40,
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -18,47 +51,20 @@ class MyApp extends StatelessWidget {
             centerTitle: true,
           ),
           body: GridView.builder(
+            itemCount: iconData.length ,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 4, mainAxisSpacing: 10, crossAxisSpacing: 10),
             itemBuilder: (context, index) {
               return Padding(
-                padding: const EdgeInsets.all(10),
-                child: GridList(),
-              );
+                  padding: const EdgeInsets.all(10),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: Colors.lightBlue),
+                    child: Icon(iconData[index]),
+                  ));
             },
           )),
-    );
-  }
-}
-
-class GridList extends StatelessWidget {
-  GridList({super.key});
-
-  final List<IconData> iconData = <IconData>[
-    Icons.shop,
-    Icons.person,
-    Icons.access_alarm,
-    Icons.account_box,
-    Icons.alarm,
-    Icons.airplay,
-    Icons.archive,
-    Icons.android,
-    Icons.apple,
-    Icons.camera
-  ];
-  final Random r = Random();
-  Icon randomIcon() => Icon(IconData(r.nextInt(iconData.length)));
-  Icon randomIcon2() => Icon(
-        iconData[r.nextInt(iconData.length)],
-        size: 40,
-      );
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(50), color: Colors.lightBlue),
-      child: randomIcon2(),
     );
   }
 }
