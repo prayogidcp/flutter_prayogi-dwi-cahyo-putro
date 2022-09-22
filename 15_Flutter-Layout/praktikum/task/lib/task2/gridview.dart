@@ -33,12 +33,6 @@ class MyApp extends StatelessWidget {
     Icons.swap_horizontal_circle,
     Icons.accessible_forward,
   ];
-  final Random r = Random();
-  Icon randomIcon() => Icon(IconData(r.nextInt(iconData.length)));
-  Icon randomIcon2() => Icon(
-        iconData[r.nextInt(iconData.length)],
-        size: 40,
-      );
 
   @override
   Widget build(BuildContext context) {
