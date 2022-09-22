@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
                 crossAxisCount: 4, mainAxisSpacing: 10, crossAxisSpacing: 10),
             itemBuilder: (context, index) {
               return Padding(
-                  padding: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(15),
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
