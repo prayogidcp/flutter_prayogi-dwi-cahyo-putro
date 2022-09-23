@@ -8,12 +8,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      home: const HomeScreen(),
       routes: <String, WidgetBuilder>{
-        '/imgsatu': ((context) => Image1()),
-        '/imgdua': ((context) => Image2()),
-        '/imgtiga': ((context) => Image3()),
-        '/home': ((context) => HomeScreen())
+        '/imgsatu': ((context) => const Image1()),
+        '/imgdua': ((context) => const Image2()),
+        '/imgtiga': ((context) => const Image3()),
+        '/home': ((context) => const HomeScreen())
       },
     );
   }
@@ -38,17 +38,17 @@ class _HomeScreenState extends State<HomeScreen> {
           child: GridView.count(
             crossAxisCount: 1,
             children: [
-              GestureDetector(
+              InkWell(
                   child: Image.network("https://picsum.photos/id/1/300/300"),
                   onTap: () => setState(() {
                         Navigator.pushNamed(context, '/imgsatu');
                       })),
-              GestureDetector(
+              InkWell(
                   child: Image.network("https://picsum.photos/id/2/300/300"),
                   onTap: () => setState(() {
                         Navigator.pushNamed(context, '/imgdua');
                       })),
-              GestureDetector(
+              InkWell(
                   child: Image.network("https://picsum.photos/id/3/300/300"),
                   onTap: () => setState(() {
                         Navigator.pushNamed(context, '/imgtiga');
@@ -73,7 +73,7 @@ class _Image1State extends State<Image1> {
       // appBar: AppBar(
       //   title: const Text("Image 2"),
       // ),
-      body: GestureDetector(
+      body: InkWell(
         child: Container(
             decoration: const BoxDecoration(
                 image: DecorationImage(
@@ -101,7 +101,7 @@ class _Image2State extends State<Image2> {
       // appBar: AppBar(
       //   title: const Text("Image 2"),
       // ),
-      body: GestureDetector(
+      body: InkWell(
         child: Container(
             decoration: const BoxDecoration(
                 image: DecorationImage(
@@ -129,7 +129,7 @@ class _Image3State extends State<Image3> {
       // appBar: AppBar(
       //   title: const Text("Image 2"),
       // ),
-      body: GestureDetector(
+      body: InkWell(
         child: Container(
             decoration: const BoxDecoration(
                 image: DecorationImage(
