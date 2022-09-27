@@ -1,15 +1,8 @@
 .gitignore
-5_Introduction to Algorithm and Dart Programming/praktikum/comment.dart
-5_Introduction to Algorithm and Dart Programming/praktikum/final.dart
-5_Introduction to Algorithm and Dart Programming/praktikum/fundamental_1.dart
-5_Introduction to Algorithm and Dart Programming/praktikum/operator.dart
-5_Introduction to Algorithm and Dart Programming/praktikum/tipedata.dart
-5_Introduction to Algorithm and Dart Programming/praktikum/variabel.dart
-5_Introduction to Algorithm and Dart Programming/praktikum/main.dart
-7_Branching-Looping-Function/praktikum/2_faktorial.dart
-7_Branching-Looping-Function/praktikum/main.dart
-8_Advance Function - Async-Await/praktikum/looping.dart
-9_Collection/praktikum/maaain.dart
+5_Introduction to Algorithm and Dart Programming
+7_Branching-Looping-Function
+8_Advance Function - Async-Await
+9_Collection/praktikum
 dart.dart
 test.dart
 latihan.dart
@@ -19,9 +12,12 @@ latihanlgi11.dart
 12_IntroductionFlutterWidget/praktikum
 13_Platform-Widget/praktikum
 testeee.dart
-Belajar
+dart
+belajar
 14_Flutter-Command-Line-Interface-and-Flutter-package-management/praktikum
 15_Flutter-Layout/praktikum
 16_Assets
 task_management_assets
+Weekly-Task
 17_Form-Input-Button
+Aplikasi-Task-Management
