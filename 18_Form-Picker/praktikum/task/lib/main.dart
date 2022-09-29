@@ -153,13 +153,13 @@ class _HomeAppState extends State<HomeApp> {
             ),
             ElevatedButton(
                 onPressed: () {
-                if(filePath != null){
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Result(filePath: filePath!),
-                      ));
-                }
+                  if (filePath != null) {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Result(filePath: filePath!),
+                        ));
+                  }
                 },
                 child: const Text("Submit")),
           ],
@@ -167,23 +167,6 @@ class _HomeAppState extends State<HomeApp> {
       ),
     );
   }
-}
-
-Widget buildFilePicker() {
-  return Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
-      const Text(
-        "Cover",
-        style: TextStyle(fontWeight: FontWeight.bold),
-      ),
-      Container(
-        width: double.infinity,
-        child:
-            ElevatedButton(onPressed: () {}, child: const Text("Pilih File")),
-      )
-    ],
-  );
 }
 
 class Result extends StatelessWidget {
