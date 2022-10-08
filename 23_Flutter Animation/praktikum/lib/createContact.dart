@@ -11,6 +11,7 @@ class _CreateContactState extends State<CreateContact> {
   TextEditingController namaInput = TextEditingController();
   TextEditingController nohpInput = TextEditingController();
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  bool isBig = false;
 
   @override
   Widget build(BuildContext context) {
@@ -55,6 +56,23 @@ class _CreateContactState extends State<CreateContact> {
                   }
                   return null;
                 },
+              ),
+              InkWell(
+                onTap: () {
+                  setState(() {
+                    isBig = !isBig;
+                  });
+                },
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 300),
+                  width: isBig ? 200 : 100,
+                  height: isBig ? 200 : 100,
+                  child: Image.network(
+                    "https://fib.unair.ac.id/fib/wp-content/uploads/2019/01/Pengumuman-2.jpg",
+                    // width: 100,
+                    // height: 100,
+                  ),
+                ),
               ),
               ElevatedButton(
                   onPressed: () {
